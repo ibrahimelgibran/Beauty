@@ -5,7 +5,7 @@ import sh1 from "../Assets/shape-1.svg";
 import sh2 from "../Assets/shape-2.svg";
 import sh3 from "../Assets/shape-3.svg";
 import sh6 from "../Assets/shape-6.svg";
-import homeImg from "../Assets/hero-img.png";
+import homeImg from "../Assets/bg.png";
 import { Link } from "react-router-dom";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -73,14 +73,6 @@ function Home() {
           }}
         >
           <Col md={6}>
-            <img
-              src={homeImg}
-              className="img-fluid"
-              alt="main img"
-              style={{ justifyContent: "center", padding: "30px" }}
-            />
-          </Col>
-          <Col md={6}>
             <h2 style={{ color: "#67AEFF" }}>Code Website From Any Where</h2>
             <h5
               style={{
@@ -112,6 +104,18 @@ function Home() {
             <Button variant="primary" style={btnStyle} as={Link} to="/markdown">
               Markdown Editor
             </Button>
+          </Col>
+          <Col md={6}>
+            <img
+              src={homeImg}
+              className="img-fluid"
+              alt="main img"
+              style={{
+                justifyContent: "center",
+                padding: "30px",
+                borderRadius: "100%",
+              }}
+            />
           </Col>
         </Row>
       </Container>
