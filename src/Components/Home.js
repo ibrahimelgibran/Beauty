@@ -81,7 +81,7 @@ function Home() {
             />
           </Col>
           <Col md={6}>
-            <h2 style={{ color: "#67AEFF" }}>Code Websites From Any Where</h2>
+            <h2 style={{ color: "#67AEFF" }}>Code Website From Any Where</h2>
             <h5
               style={{
                 textAlign: "justify",
