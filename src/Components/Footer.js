@@ -9,8 +9,12 @@ function Footer() {
   return (
     <div>
       <Container fluid className="footer">
-        copyright © {year} | made with{" "}
-        <i className="far fa-heart" style={{ color: "#ED5AB3" }}></i>{" "}
+        {" "}
+        {/* copyright © {year} |  */}
+        made with <i
+          className="far fa-heart"
+          style={{ color: "#3ABEF9" }}
+        ></i>{" "}
         <a
           href="https://ibrahimelgibran.com/"
           style={{ color: "rgba(250, 230, 194, 0.972)" }}

@@ -12,7 +12,7 @@ function LaunguageManager() {
     return URL.createObjectURL(blob);
   };
 
-  const htmlDefault = `<h2>Hello User</h2>`;
+  const htmlDefault = `<h2>Hello World</h2>`;
 
   const cssDefault = `body{
   text-align:center;
@@ -54,7 +54,7 @@ function LaunguageManager() {
       <Container fluid={true} className="pane pane-top">
         <Row noGutters={true}>
           <Col md={4} className="editor-lang">
-            <div className="editor-text">
+            <div className="editor-text" style={{ backgroundColor: "#FF8F00" }}>
               <i className="fab fa-html5"> </i> HTML
             </div>
             <Editor
@@ -67,7 +67,7 @@ function LaunguageManager() {
           </Col>
 
           <Col md={4} className="editor-lang">
-            <div className="editor-text">
+            <div className="editor-text" style={{ backgroundColor: "#3ABEF9" }}>
               <i className="fab fa-css3-alt"></i> CSS
             </div>
             <Editor
@@ -80,8 +80,12 @@ function LaunguageManager() {
           </Col>
 
           <Col md={4} className="editor-lang">
-            <div className="editor-text">
-              <i className="fab fa-js-square"></i> JavaScript
+            <div
+              className="editor-text"
+              style={{ backgroundColor: "#FFC700", color: "#fff" }}
+            >
+              <i className="fab fa-js-square" style={{ color: "#FFF455" }}></i>{" "}
+              JavaScript
             </div>
             <Editor
               launguage="javascript"
